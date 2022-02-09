@@ -1,7 +1,6 @@
 package com.lukeweb.textcount.textcountapp;
 
 import java.io.BufferedReader;
-//import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -21,8 +20,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 @Service
 public class TextCountService {
-//	private static List<Map.Entry<Integer, Integer> > list;
-//	private static Map<Integer, Integer> counts;
+
 	public ArrayList<String> filterText(@RequestParam("file") MultipartFile file) throws IOException {
 	String[] words;
         String line; 
@@ -65,7 +63,7 @@ public class TextCountService {
 					
             	}
 
-            	if(s.length() == 1 && Pattern.matches("(?U)[\\p{Punct}&&[^@&]]",s.substring(0,1))) { //filter out 
+            	if(s.length() == 1 && Pattern.matches("(?U)[\\p{Punct}&&[^@&]]",s.substring(0,1))) { //filter out punctuation from word with single length
             		s = s.replace(s.substring(0,1), "");
             		
             	}
