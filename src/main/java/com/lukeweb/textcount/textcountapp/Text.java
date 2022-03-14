@@ -5,6 +5,7 @@ public class Text {
 	private String count;
 	private String averageLength;
 	private String finalFreqs;
+	
 	//No Args Constructor
 	public Text() {
 
