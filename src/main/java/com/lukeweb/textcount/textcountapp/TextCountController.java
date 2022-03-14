@@ -34,7 +34,7 @@ public class TextCountController {
 	}
 	
 	public void getCount(ArrayList<String> fWords) {
-      	count = textCountService.getCount(fWords);
+      		count = textCountService.getCount(fWords);
 	}
 	
 	public void getAverageLength(ArrayList<String> fWords, int c) {
