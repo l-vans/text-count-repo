@@ -2,12 +2,8 @@ package com.lukeweb.textcount.textcountapp;
 
 import java.io.IOException;
 import java.util.ArrayList;
-//import java.util.List;
-//import java.util.Map;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-//import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -20,7 +16,6 @@ public class TextCountController {
 	@Autowired
 	private TextCountService textCountService;
 	private ArrayList<String> fWords;
-	//private static List<Map.Entry<Integer, Integer> > list;
 	private int count = 0;
 	private String avLength = "";
 	private String frequencies = "";
