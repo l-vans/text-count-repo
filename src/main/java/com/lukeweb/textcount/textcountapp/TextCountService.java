@@ -29,7 +29,7 @@ public class TextCountService {
         while((line = br.readLine()) != null) {     	
             words = line.split(" ");
             for (String s : words){
-            	s = s.replaceAll("[\\n+\\t+\\s+]",""); //filter tabs, whitespace etc.
+            	s = s.replaceAll("[\\n+\\t+\\s+]",""); //filter tabs, whitespace etc
             	if (s.length() >= 1) {
             		if(Pattern.matches("(?U)[\\p{Punct}&&[^@&]]",s.substring(0,1))){ //filter first character of string
             			int i = 0;
